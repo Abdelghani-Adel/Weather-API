@@ -1,9 +1,15 @@
+
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
 
 // Require Express to run server and routes
+const express = require('express');
+const bodyParser = require('body-parser')
+
+
 
 // Start up an instance of app
+const app = express();
 
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
@@ -17,3 +23,11 @@ app.use(express.static('website'));
 
 
 // Setup Server
+const port = process.env.port || 5000;
+app.listen(port, () => {console.log(`Server Running on localhost via port: ${port}`)})
+
+
+// Routes
+app.get('/', (req, res) => {
+    res.sendFile('index.html')
+})
