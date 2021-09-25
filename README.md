@@ -1,10 +1,11 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This project requires is producing the temperatuer in a sepecific city based on its ZIP code. 
 
 ## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+This project works on local port 3000 while developing, but it automatically works on the given port by the system while production;
+I've used 'express', 'body-parser' and 'cors' to get this project up and running.
 
 ## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+I've made some edits in the html/css files to enhance the look of the app.
